@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Light Bulb</title>
+</head>
+<body>
+
+	<img src="1.jpg" id="obj" >
+	<!-- <button onclick="lightOn()">on</button>
+	<button onclick="lightOff()">off</button> -->
+	<button onclick="control()">Control</button>
+
+	<script type="text/javascript">
+			
+		//global
+
+		// function lightOn() {
+		// 	img.src ="image/2.jpg";
+		// }
+
+		// function lightOff(){
+		// 	 img.src ="image/1.jpg";
+		// }
+
+		function control(){
+			let img = document.getElementById('obj');
+			let arr = img.src.split("/");
+
+			
+			if (arr[arr.length-1] == "1.jpg") {
+				img.src = "2.jpg"
+			}
+			else{
+				img.src ="1.jpg"
+			}
+		}
+
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+http://pinnterest.com (Idea)
+http://www.freepik.com/ (Graphic & vector)
+http://undraw.co (Illustration)
+http://www.flatiocn.com (Icon)
+http://colorsinsop.com (color)
+
+http://www.fontawesome.com (Icon) cdnjs.com (for join link)
+
+https://kenwheeler.github.io/slick/ (For slider)
+
+https://veno.es/venobox/ (veno box) (for box)

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Loop</title>
+</head>
+<body>
+	<h1>Loop Function</h1>
+	<ol>
+		
+	</ol>
+
+	<script type="text/javascript">
+		// for (var i = 1; i <= 10; i++) {
+		// 	console.log(`${i} Hello`)
+		// }
+
+
+
+		//*For in
+		let arr= ["apple","mango","orange","banana","grab",]
+
+
+		//*ပုံမှန် loop ပတ်တာ
+		// for (let i = 0; i < arr.length; i++) {
+		// 	document.querySelector("ol").innerHTML +=`<li> ${arr[i]}</li>`;
+		// }
+
+
+
+
+		//*For in
+		//*x က arr ထဲကဟာ တွေကို သိတာ i နဲတူတယ်
+		// for (x in arr) {
+		// 	document.querySelector("ol").innerHTML +=`<li> ${arr[x]} for in</li>`;
+		// }
+
+
+
+		//*For of
+		//*x က arr ကို ကိုယ်စားပြုတယ်
+		// for(x of arr){
+		// 	document.querySelector("ol").innerHTML +=`<li> ${x} for of</li>`;
+		// }
+
+		//*el ကအခန်း တွေကို ကိုယ်စားပြုတယ်၊၊ index က အခန်းရဲ index number ကိုယ်စားပြုတယ်၊၊
+		//*obj arr proto type မှာဘဲအလုပ်လုပ်ပါတယ်။
+		// arr.map(function(el,index){
+		// 	document.querySelector("ol").innerHTML +=`<li> ${el}-${index} Method</li>`;
+		// });
+
+		let	obj = {
+			name: "Han Wai Htun",
+			age: 18,
+			job: "Web Developer",
+
+		}
+
+		for(x in obj){
+			document.querySelector("ol").innerHTML +=`<li> ${x} - ${obj[x]}</li>`;
+		}
+
+
+
+
+
+
+		function showHello(max) {
+			for (var i = 1; i <= max; i++) {
+			console.log(`${i} I Love You`)
+		}
+		}
+
+
+
+
+	</script>
+</body>
+</html>

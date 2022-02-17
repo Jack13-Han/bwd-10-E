@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<img src="1.jpg" id="obj">
+	<!-- <button onclick="lighton()" id="lighton">on</button>
+	<button onclick="lightoff()" id="lightoff">off</button> -->
+	<button onclick="lightcontrol()">Control</button>
+
+
+	<script type="text/javascript">
+		
+
+		// function lighton() {
+		// 		img.src ="2.jpg"
+		// 	}
+
+		// function lightoff(){
+		// 	img.src ="1.jpg"
+		// }	
+
+		function lightcontrol(){
+			let img = document.getElementById('obj');
+			let arr =img.src.split("/");
+
+
+
+			if (arr[arr.length-1]== "1.jpg" ){
+				img.src="2.jpg"
+			
+			}
+			else{
+
+				img.src ="1.jpg"
+				
+			}
+		}
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Arrow Function</title>
+</head>
+<body>
+	<h1>Function & Arrow Function</h1>
+	<button>Click</button>
+	<script type="text/javascript">
+		// function one() {
+		// 	console.log(`This is function one`);
+		// }
+
+		let one =() => console.log(`This is function one`)
+
+		// function two(){
+		// 	let x = `x is variable`;
+		// 	console.log(x);
+		// } 
+
+		let two = () =>{
+			let x = `x is variable`;
+			console.log(x);
+		} 
+
+		// function three(x) {
+		// 	console.log(x);
+		// }
+
+		let three = x => console.log(x);
+
+
+		// function four(x,y=1){
+		// 	console.log({x,y});
+		// }
+
+		let four = (x, y=1) => console.log({x,y});
+
+		// document.querySelector("button").onclick=function(){
+		// 	console.log(`Hi`);
+		// }
+
+		document.querySelector("button").onclick= ()=>{
+			console.log(`Hello`)
+		}
+
+		// document.querySelector("button").addEventListener("click",function () {
+		// 	console.log(`This is five function`)
+		// })
+
+		document.querySelector("button").addEventListener("click",()=>{
+			console.log(`This is five function`)
+		}),
+
+		
+
+
+		//IIFE
+
+		(()=> console.log(`HI`))();
+
+
+		// (function(){
+		// 	console.log(`This is IIFE`);
+		// })();
+
+		let obj={
+			
+			name: "Han Wai Htun",	
+			age:18,
+
+			
+			//  learn: function(){
+			// 	console.log(`${this.age} can learn Web Development`)
+
+			// },
+
+			learn:()=>{ console.log(`${obj.name} can learn Web Development`)}
+
+		}
+
+	</script>
+</body>
+</html>

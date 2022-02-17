@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Mini Project</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<h1>To Do List</h1>
+
+	<div class="todo">
+		<div class="add_box" id="add_box">
+		<input type="text" id="input" autofocus="" >
+		<button id="addBtn" onclick="addlist()"> Add</button>
+	</div>
+
+	<ul class="list" id="list">
+		
+	</ul>
+	</div>
+
+	<script type="text/javascript">
+
+		let miniTextLength =3;
+		let	 input = document.getElementById('input');
+		let list = document.getElementById('list');
+
+		
+		function textFilter(x){
+			if (x) {
+				if (x.length >= miniTextLength) {
+					return x;
+				}
+				else{
+					alert(`Min Text Length is 3`)
+				return false;
+			}
+			}
+			else{
+				alert(`Input Text Empty`)
+				return false;
+			}
+		}
+
+		function addlist() {
+
+		//get data
+		let input_text=textFilter(input.value);
+		input.value ="";
+
+		//set data
+		if (input_text) {
+			console.log(input_text);
+		list.innerHTML += `<li>${input_text}</li>`;
+		}
+		}
+/*******************end part 1************/
+/*******************start part 2************/
+
+			
+
+	</script>		
+</body>
+</html>
